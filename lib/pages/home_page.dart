@@ -48,6 +48,17 @@ class HomePage extends StatelessWidget {
                 trailing: Icon(Icons.check),
               ),
             ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Navigator.pushNamed(context, MyRoutes.safeAreaRoute);
+                },
+                leading: Icon(Icons.macro_off),
+                title: Text("Safe Area"),
+                trailing: Icon(Icons.check),
+              ),
+            ),
           ]),
         ),
         drawer: MyDrawer(),
