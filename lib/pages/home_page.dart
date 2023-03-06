@@ -37,6 +37,17 @@ class HomePage extends StatelessWidget {
                 trailing: Icon(Icons.check),
               ),
             ),
+            Card(
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Navigator.pushNamed(context, MyRoutes.appBarRoute);
+                },
+                leading: Icon(Icons.macro_off),
+                title: Text("Appbar & text widget"),
+                trailing: Icon(Icons.check),
+              ),
+            ),
           ]),
         ),
         drawer: MyDrawer(),
