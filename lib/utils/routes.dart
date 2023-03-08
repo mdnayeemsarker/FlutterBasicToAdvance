@@ -4,4 +4,5 @@ class MyRoutes {
   static String stateFulRoute = "/stateFul";
   static String appBarRoute = "/appbar";
   static String safeAreaRoute = "/safearea";
+  static String containerRoute = "/container";
 }

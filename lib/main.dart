@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/app_bar.dart';
+import 'package:flutter_basic_advance/pages/container.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
 import 'package:flutter_basic_advance/pages/safearea.dart';
 import 'package:flutter_basic_advance/pages/stateful.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.stateFulRoute: (context) => StateFul(),
           MyRoutes.appBarRoute: (context) => AppBarPage(),
           MyRoutes.safeAreaRoute: (context) => SareAreaPage(),
+          MyRoutes.containerRoute: (context) => ContainerPage(),
         });
   }
 }
