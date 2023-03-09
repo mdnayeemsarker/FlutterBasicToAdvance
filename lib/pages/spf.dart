@@ -11,6 +11,10 @@ class SPFPage extends StatelessWidget {
         appBar: AppBar(
           title: Text("Stack Position FAB"),
         ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(Icons.add),
+        ),
         body: Center(
           child: Card(
             shape: RoundedRectangleBorder(
