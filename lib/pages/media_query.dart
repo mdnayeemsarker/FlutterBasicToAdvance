@@ -9,8 +9,7 @@ class MediaQueryPage extends StatelessWidget {
     var button_hight = screen_height / 5;
     var width = MediaQuery.of(context).size.width / 4;
 
-    return SafeArea(
-        child: Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text("Media Query"),
       ),
@@ -21,6 +20,6 @@ class MediaQueryPage extends StatelessWidget {
           color: Colors.blue,
         ),
       ),
-    ));
+    );
   }
 }

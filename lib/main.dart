@@ -10,6 +10,7 @@ import 'package:flutter_basic_advance/pages/image.dart';
 import 'package:flutter_basic_advance/pages/liquid_swipe.dart';
 import 'package:flutter_basic_advance/pages/list_tile.dart';
 import 'package:flutter_basic_advance/pages/media_query.dart';
+import 'package:flutter_basic_advance/pages/page_view.dart';
 import 'package:flutter_basic_advance/pages/row_column.dart';
 import 'package:flutter_basic_advance/pages/safearea.dart';
 import 'package:flutter_basic_advance/pages/spf.dart';
@@ -53,6 +54,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.liquidSeipeRoute: (context) => const LiquidSwipePage(),
           MyRoutes.cardGridViewRoute: (context) => const CardGridViewPage(),
           MyRoutes.expandedRoute: (context) => const ExpandedWidgetPage(),
+          MyRoutes.pageViewRoute: (context) => const PageViewPage(),
         });
   }
 }
