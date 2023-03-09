@@ -10,4 +10,5 @@ class MyRoutes {
   static String listTileRoute = "/listtile";
   static String stackPositionFlotingRoute = "/spf";
   static String imageRoute = "/image";
+  static String liquidSeipeRoute = "/liquid_swipe";
 }

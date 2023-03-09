@@ -5,6 +5,7 @@ import 'package:flutter_basic_advance/pages/app_bar.dart';
 import 'package:flutter_basic_advance/pages/container.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
 import 'package:flutter_basic_advance/pages/image.dart';
+import 'package:flutter_basic_advance/pages/liquid_swipe.dart';
 import 'package:flutter_basic_advance/pages/list_tile.dart';
 import 'package:flutter_basic_advance/pages/media_query.dart';
 import 'package:flutter_basic_advance/pages/row_column.dart';
@@ -47,6 +48,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.listTileRoute: (context) => const ListTilePage(),
           MyRoutes.stackPositionFlotingRoute: (context) => const SPFPage(),
           MyRoutes.imageRoute: (context) => const ImagePage(),
+          MyRoutes.liquidSeipeRoute: (context) => const LiquidSwipePage(),
         });
   }
 }
