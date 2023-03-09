@@ -12,4 +12,5 @@ class MyRoutes {
   static String imageRoute = "/image";
   static String liquidSeipeRoute = "/liquid_swipe";
   static String cardGridViewRoute = "/cardGridViewRoute";
+  static String expandedRoute = "/expandedRoute";
 }
