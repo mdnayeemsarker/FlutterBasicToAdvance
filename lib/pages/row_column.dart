@@ -9,50 +9,53 @@ class RowColPage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: Text("Row and Column")),
-        body: Row(
-          children: [
-            Container(
-              height: 200,
-              width: 300,
-              color: Colors.amberAccent,
-            ),
-            SizedBox(
-              height: 5,
-              width: 5,
-            ),
-            Container(
-              height: 200,
-              width: 300,
-              color: Colors.amberAccent,
-            ),
-            SizedBox(
-              height: 5,
-              width: 5,
-            ),
-            Container(
-              height: 200,
-              width: 300,
-              color: Colors.amberAccent,
-            ),
-            SizedBox(
-              height: 5,
-              width: 5,
-            ),
-            Container(
-              height: 200,
-              width: 300,
-              color: Colors.amberAccent,
-            ),
-            SizedBox(
-              height: 5,
-              width: 5,
-            ),
-            Container(
-              height: 200,
-              width: 300,
-              color: Colors.amberAccent,
-            ),
-          ],
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              Container(
+                height: 200,
+                width: 300,
+                color: Colors.amberAccent,
+              ),
+              const SizedBox(
+                height: 5,
+                width: 5,
+              ),
+              Container(
+                height: 200,
+                width: 300,
+                color: Colors.amberAccent,
+              ),
+              const SizedBox(
+                height: 5,
+                width: 5,
+              ),
+              Container(
+                height: 200,
+                width: 300,
+                color: Colors.amberAccent,
+              ),
+              const SizedBox(
+                height: 5,
+                width: 5,
+              ),
+              Container(
+                height: 200,
+                width: 300,
+                color: Colors.amberAccent,
+              ),
+              const SizedBox(
+                height: 5,
+                width: 5,
+              ),
+              Container(
+                height: 200,
+                width: 300,
+                color: Colors.amberAccent,
+              ),
+            ],
+          ),
         ),
       ),
     );
