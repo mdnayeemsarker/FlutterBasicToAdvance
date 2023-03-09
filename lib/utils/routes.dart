@@ -6,4 +6,5 @@ class MyRoutes {
   static String safeAreaRoute = "/safearea";
   static String containerRoute = "/container";
   static String rowColRoute = "/row_column";
+  static String mediaQueryRoute = "/mediaquery";
 }
