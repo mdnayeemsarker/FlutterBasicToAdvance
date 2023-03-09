@@ -7,7 +7,9 @@ class SareAreaPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: Text("Safeare"),
+        ),
         body: Center(
             child: Text(
                 "Safeare that means this are seferated appbar and the bottom navigation area, that is called safe area")),

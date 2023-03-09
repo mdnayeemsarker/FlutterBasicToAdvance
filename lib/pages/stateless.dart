@@ -6,7 +6,9 @@ class StateLess extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+          title: Text("Stateless Widget"),
+        ),
         body: Center(child: Text("This is an Stateless Widget")));
   }
 }

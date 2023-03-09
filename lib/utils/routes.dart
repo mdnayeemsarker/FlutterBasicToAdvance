@@ -9,4 +9,5 @@ class MyRoutes {
   static String mediaQueryRoute = "/mediaquery";
   static String listTileRoute = "/listtile";
   static String stackPositionFlotingRoute = "/spf";
+  static String imageRoute = "/image";
 }
