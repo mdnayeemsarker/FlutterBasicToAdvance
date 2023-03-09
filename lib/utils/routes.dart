@@ -7,4 +7,5 @@ class MyRoutes {
   static String containerRoute = "/container";
   static String rowColRoute = "/row_column";
   static String mediaQueryRoute = "/mediaquery";
+  static String listTileRoute = "/listtile";
 }

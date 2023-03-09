@@ -21,7 +21,6 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MyRoutes.stateLessRoute);
                 },
-                leading: const Icon(Icons.macro_off),
                 title: const Text("Stateless Widget"),
                 trailing: const Icon(Icons.check),
               ),
@@ -32,7 +31,6 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MyRoutes.stateFulRoute);
                 },
-                leading: const Icon(Icons.macro_off),
                 title: const Text("Statefull Widget"),
                 trailing: const Icon(Icons.check),
               ),
@@ -43,7 +41,6 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MyRoutes.appBarRoute);
                 },
-                leading: const Icon(Icons.macro_off),
                 title: const Text("Appbar & text widget"),
                 trailing: const Icon(Icons.check),
               ),
@@ -54,7 +51,6 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MyRoutes.safeAreaRoute);
                 },
-                leading: const Icon(Icons.macro_off),
                 title: const Text("Safe Area"),
                 trailing: const Icon(Icons.check),
               ),
@@ -65,7 +61,6 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MyRoutes.containerRoute);
                 },
-                leading: const Icon(Icons.macro_off),
                 title: const Text("Container"),
                 trailing: const Icon(Icons.check),
               ),
@@ -76,7 +71,6 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MyRoutes.rowColRoute);
                 },
-                leading: const Icon(Icons.macro_off),
                 title: const Text("Row & Column"),
                 trailing: const Icon(Icons.check),
               ),
@@ -87,8 +81,17 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.pushNamed(context, MyRoutes.mediaQueryRoute);
                 },
-                leading: const Icon(Icons.macro_off),
                 title: const Text("Media Query"),
+                trailing: const Icon(Icons.check),
+              ),
+            ),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Navigator.pushNamed(context, MyRoutes.listTileRoute);
+                },
+                title: const Text("List Tile"),
                 trailing: const Icon(Icons.check),
               ),
             ),
