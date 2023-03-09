@@ -4,13 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/app_bar.dart';
 import 'package:flutter_basic_advance/pages/container.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
+import 'package:flutter_basic_advance/pages/row_column.dart';
 import 'package:flutter_basic_advance/pages/safearea.dart';
 import 'package:flutter_basic_advance/pages/stateful.dart';
 import 'package:flutter_basic_advance/pages/stateless.dart';
 import 'package:flutter_basic_advance/utils/routes.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -32,11 +33,12 @@ class MyApp extends StatelessWidget {
         routes: {
           "/": (context) => HomePage(),
           MyRoutes.homeRoute: (context) => HomePage(),
-          MyRoutes.stateLessRoute: (context) => StateLess(),
-          MyRoutes.stateFulRoute: (context) => StateFul(),
-          MyRoutes.appBarRoute: (context) => AppBarPage(),
-          MyRoutes.safeAreaRoute: (context) => SareAreaPage(),
-          MyRoutes.containerRoute: (context) => ContainerPage(),
+          MyRoutes.stateLessRoute: (context) => const StateLess(),
+          MyRoutes.stateFulRoute: (context) => const StateFul(),
+          MyRoutes.appBarRoute: (context) => const AppBarPage(),
+          MyRoutes.safeAreaRoute: (context) => const SareAreaPage(),
+          MyRoutes.containerRoute: (context) => const ContainerPage(),
+          MyRoutes.rowColRoute: (context) => const RowColPage(),
         });
   }
 }
