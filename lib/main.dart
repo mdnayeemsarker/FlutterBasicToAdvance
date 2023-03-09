@@ -8,6 +8,7 @@ import 'package:flutter_basic_advance/pages/list_tile.dart';
 import 'package:flutter_basic_advance/pages/media_query.dart';
 import 'package:flutter_basic_advance/pages/row_column.dart';
 import 'package:flutter_basic_advance/pages/safearea.dart';
+import 'package:flutter_basic_advance/pages/spf.dart';
 import 'package:flutter_basic_advance/pages/stateful.dart';
 import 'package:flutter_basic_advance/pages/stateless.dart';
 import 'package:flutter_basic_advance/utils/routes.dart';
@@ -43,6 +44,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.rowColRoute: (context) => const RowColPage(),
           MyRoutes.mediaQueryRoute: (context) => const MediaQueryPage(),
           MyRoutes.listTileRoute: (context) => const ListTilePage(),
+          MyRoutes.stackPositionFlotingRoute: (context) => const SPFPage(),
         });
   }
 }

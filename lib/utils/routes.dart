@@ -8,4 +8,5 @@ class MyRoutes {
   static String rowColRoute = "/row_column";
   static String mediaQueryRoute = "/mediaquery";
   static String listTileRoute = "/listtile";
+  static String stackPositionFlotingRoute = "/spf";
 }

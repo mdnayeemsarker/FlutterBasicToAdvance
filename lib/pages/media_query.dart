@@ -9,18 +9,18 @@ class MediaQueryPage extends StatelessWidget {
     var button_hight = screen_height / 5;
     var width = MediaQuery.of(context).size.width / 4;
 
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SafeArea(
-          child: Scaffold(
-        body: Center(
-          child: Container(
-            height: button_hight,
-            width: width,
-            color: Colors.blue,
-          ),
+    return SafeArea(
+        child: Scaffold(
+      appBar: AppBar(
+        title: Text("Media Query"),
+      ),
+      body: Center(
+        child: Container(
+          height: button_hight,
+          width: width,
+          color: Colors.blue,
         ),
-      )),
-    );
+      ),
+    ));
   }
 }

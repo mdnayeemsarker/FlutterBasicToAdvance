@@ -8,6 +8,9 @@ class ListTilePage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("List Tile "),
+        ),
         body: ListView(
           children: [
             ListTile(

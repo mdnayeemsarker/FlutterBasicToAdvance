@@ -95,6 +95,17 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Navigator.pushNamed(
+                      context, MyRoutes.stackPositionFlotingRoute);
+                },
+                title: const Text("Stack Position FlotingAction Button"),
+                trailing: const Icon(Icons.check),
+              ),
+            ),
           ]),
         ),
         drawer: const MyDrawer(),
