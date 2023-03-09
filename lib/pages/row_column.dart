@@ -9,43 +9,47 @@ class RowColPage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(title: Text("Row and Column")),
-        body: Column(
+        body: Row(
           children: [
             Container(
               height: 200,
-              width: 100,
+              width: 300,
               color: Colors.amberAccent,
             ),
             SizedBox(
               height: 5,
+              width: 5,
             ),
             Container(
               height: 200,
-              width: 100,
+              width: 300,
               color: Colors.amberAccent,
             ),
             SizedBox(
               height: 5,
+              width: 5,
             ),
             Container(
               height: 200,
-              width: 100,
+              width: 300,
               color: Colors.amberAccent,
             ),
             SizedBox(
               height: 5,
+              width: 5,
             ),
             Container(
               height: 200,
-              width: 100,
+              width: 300,
               color: Colors.amberAccent,
             ),
             SizedBox(
               height: 5,
+              width: 5,
             ),
             Container(
               height: 200,
-              width: 100,
+              width: 300,
               color: Colors.amberAccent,
             ),
           ],
