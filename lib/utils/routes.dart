@@ -16,4 +16,5 @@ class MyRoutes {
   static String pageViewRoute = "/pageViewRoute";
   static String heroWidgetRoute = "/heroWidgetRoute";
   static String heroWidget2Route = "/heroWidget2Route";
+  static String bottomnavigationbarRoute = "/bottomnavigationbar";
 }

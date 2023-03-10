@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/app_bar.dart';
+import 'package:flutter_basic_advance/pages/bottom_navigation.dart';
 import 'package:flutter_basic_advance/pages/card_gridview.dart';
 import 'package:flutter_basic_advance/pages/container.dart';
 import 'package:flutter_basic_advance/pages/expanded.dart';
@@ -57,6 +58,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.expandedRoute: (context) => const ExpandedWidgetPage(),
           MyRoutes.pageViewRoute: (context) => const PageViewPage(),
           MyRoutes.heroWidgetRoute: (context) => const HeroWidgetPage(),
+          MyRoutes.bottomnavigationbarRoute: (context) => const BottomNavigationPage(),
         });
   }
 }
