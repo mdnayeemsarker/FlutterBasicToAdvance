@@ -5,6 +5,7 @@ import 'package:flutter_basic_advance/pages/app_bar.dart';
 import 'package:flutter_basic_advance/pages/card_gridview.dart';
 import 'package:flutter_basic_advance/pages/container.dart';
 import 'package:flutter_basic_advance/pages/expanded.dart';
+import 'package:flutter_basic_advance/pages/hero_widget.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
 import 'package:flutter_basic_advance/pages/image.dart';
 import 'package:flutter_basic_advance/pages/liquid_swipe.dart';
@@ -55,6 +56,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.cardGridViewRoute: (context) => const CardGridViewPage(),
           MyRoutes.expandedRoute: (context) => const ExpandedWidgetPage(),
           MyRoutes.pageViewRoute: (context) => const PageViewPage(),
+          MyRoutes.heroWidgetRoute: (context) => const HeroWidgetPage(),
         });
   }
 }

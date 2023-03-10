@@ -14,4 +14,6 @@ class MyRoutes {
   static String cardGridViewRoute = "/cardGridViewRoute";
   static String expandedRoute = "/expandedRoute";
   static String pageViewRoute = "/pageViewRoute";
+  static String heroWidgetRoute = "/heroWidgetRoute";
+  static String heroWidget2Route = "/heroWidget2Route";
 }
