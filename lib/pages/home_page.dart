@@ -170,9 +170,20 @@ class HomePage extends StatelessWidget {
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: ListTile(
                 onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.bottomnavigationbarRoute);
+                  Navigator.pushNamed(
+                      context, MyRoutes.bottomnavbarRoute);
                 },
                 title: const Text("Bottom Navigation Bar"),
+                trailing: const Icon(Icons.check),
+              ),
+            ),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Navigator.pushNamed(context, MyRoutes.tabbarRoute);
+                },
+                title: const Text("Tab Bar"),
                 trailing: const Icon(Icons.check),
               ),
             ),
