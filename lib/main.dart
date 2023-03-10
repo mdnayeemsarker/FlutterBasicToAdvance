@@ -15,6 +15,7 @@ import 'package:flutter_basic_advance/pages/media_query.dart';
 import 'package:flutter_basic_advance/pages/page_view.dart';
 import 'package:flutter_basic_advance/pages/row_column.dart';
 import 'package:flutter_basic_advance/pages/safearea.dart';
+import 'package:flutter_basic_advance/pages/sliver_appbar.dart';
 import 'package:flutter_basic_advance/pages/spf.dart';
 import 'package:flutter_basic_advance/pages/stateful.dart';
 import 'package:flutter_basic_advance/pages/stateless.dart';
@@ -61,6 +62,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.heroWidgetRoute: (context) => const HeroWidgetPage(),
           MyRoutes.bottomnavbarRoute: (context) => const BottomNavigationPage(),
           MyRoutes.tabbarRoute: (context) => const TabBarPage(),
+          MyRoutes.sliverappbarRoute: (context) => const SliverAppBarPage(),
         });
   }
 }

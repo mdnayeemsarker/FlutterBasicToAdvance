@@ -18,4 +18,5 @@ class MyRoutes {
   static String heroWidget2Route = "/heroWidget2Route";
   static String bottomnavbarRoute = "/bottomnavigationbar";
   static String tabbarRoute = "/tabbar";
+  static String sliverappbarRoute = "/sliverappbar";
 }
