@@ -27,4 +27,5 @@ class MyRoutes {
   static String customalrtdlgRoute = "/customalrtdlg";
   static String snackbarRoute = "/snackbar";
   static String sliderRoute = "/slider";
+  static String richtextRoute = "/richtext";
 }

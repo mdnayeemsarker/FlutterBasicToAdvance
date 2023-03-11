@@ -289,6 +289,16 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Navigator.pushNamed(context, MyRoutes.richtextRoute);
+                },
+                title: const Text("Rich Text"),
+                trailing: const Icon(Icons.check),
+              ),
+            ),
           ]),
         ),
         drawer: const MyDrawer(),
