@@ -23,4 +23,5 @@ class MyRoutes {
   static String providerstateRoute = "/provider_state";
   static String imagepickerRoute = "/imagepicker";
   static String modalbtmsheetRoute = "/modalbtmsheet";
+  static String alertdialogRoute = "/alertdialog";
 }
