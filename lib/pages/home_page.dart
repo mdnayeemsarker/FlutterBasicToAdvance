@@ -14,6 +14,8 @@ class HomePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Flutter BTA"),
         ),
+        floatingActionButton:
+            FloatingActionButton(onPressed: () {}, child: Icon(Icons.add)),
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [

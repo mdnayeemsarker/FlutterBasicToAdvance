@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_advance/pages/state_data.dart';
+import 'package:provider/provider.dart';
 
 class ProviderStatePage extends StatelessWidget {
   const ProviderStatePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Providerhome();
+    return ChangeNotifierProvider(
+        create: (context) => StateData(), child: Providerhome());
   }
 }
 
@@ -17,14 +20,9 @@ class Providerhome extends StatefulWidget {
 }
 
 class _ProviderhomeState extends State<Providerhome> {
-  int value = 0;
-  Increment() {
-    value++;
-    setState(() {});
-  }
-
   @override
   Widget build(BuildContext context) {
+    final proviverData = Provider.of<StateData>(context);
     return SafeArea(
         child: Scaffold(
       appBar: AppBar(
@@ -35,12 +33,13 @@ class _ProviderhomeState extends State<Providerhome> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              value.toString(),
+              proviverData.value.toString(),
               style: TextStyle(fontSize: 50),
             ),
             ElevatedButton(
                 onPressed: () {
-                  Increment();
+                  proviverData.Increment();
+                  setState(() {});
                 },
                 child: Text("Click"))
           ],
