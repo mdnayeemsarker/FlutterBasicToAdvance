@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/alert_dialog.dart';
 import 'package:flutter_basic_advance/pages/custom_alert_dialog.dart';
 import 'package:flutter_basic_advance/pages/modal_bottom_sheet.dart';
+import 'package:flutter_basic_advance/pages/slider.dart';
 import 'package:flutter_basic_advance/pages/snakbar.dart';
 import 'package:provider/provider.dart';
 
@@ -82,6 +83,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.alertdialogRoute: (context) => const AlertDialogPage(),
           MyRoutes.customalrtdlgRoute: (context) => const CustomAlertDlgPage(),
           MyRoutes.snackbarRoute: (context) => const SnackBarPage(),
+          MyRoutes.sliderRoute: (context) => const SliderPage(),
         });
   }
 }
