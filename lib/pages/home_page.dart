@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/utils/routes.dart';
@@ -207,6 +209,16 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Navigator.pushNamed(context, MyRoutes.providerstateRoute);
+                },
+                title: const Text("Provider State management"),
+                trailing: const Icon(Icons.check),
+              ),
+            ),
           ]),
         ),
         drawer: const MyDrawer(),
@@ -231,7 +243,8 @@ class MyDrawer extends StatelessWidget {
                 accountName: Text("MD. NAYEEM SARKER"),
                 accountEmail: Text("dev.ab.nayeem@gmail.com"),
                 currentAccountPicture: CircleAvatar(
-                  backgroundImage: NetworkImage(imageUrl),
+                  backgroundColor: Colors.amber,
+                  // backgroundImage: NetworkImage(imageUrl),
                 ),
               )),
           ListTile(

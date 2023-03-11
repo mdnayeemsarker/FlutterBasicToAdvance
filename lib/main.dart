@@ -14,6 +14,7 @@ import 'package:flutter_basic_advance/pages/liquid_swipe.dart';
 import 'package:flutter_basic_advance/pages/list_tile.dart';
 import 'package:flutter_basic_advance/pages/media_query.dart';
 import 'package:flutter_basic_advance/pages/page_view.dart';
+import 'package:flutter_basic_advance/pages/provider_state.dart';
 import 'package:flutter_basic_advance/pages/row_column.dart';
 import 'package:flutter_basic_advance/pages/safearea.dart';
 import 'package:flutter_basic_advance/pages/sliver_appbar.dart';
@@ -66,6 +67,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.sliverappbarRoute: (context) => const SliverAppBarPage(),
           MyRoutes.gradientcolorappbarRoute: (context) =>
               const GradientColorAppbarPage(),
+          MyRoutes.providerstateRoute: (context) => const ProviderStatePage(),
         });
   }
 }
