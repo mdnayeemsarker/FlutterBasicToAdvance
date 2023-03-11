@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_advance/pages/receiver_page.dart';
 import 'package:flutter_basic_advance/pages/state_data.dart';
 import 'package:provider/provider.dart';
 
 class ProviderStatePage extends StatelessWidget {
   const ProviderStatePage({super.key});
 
+  // @override
+  // Widget build(BuildContext context) {
+  //   return ChangeNotifierProvider(
+  //       create: (context) => StateData(), child: Providerhome());
+  // }
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-        create: (context) => StateData(), child: Providerhome());
+    return Providerhome();
   }
 }
 
@@ -40,7 +45,18 @@ class _ProviderhomeState extends State<Providerhome> {
                 onPressed: () {
                   proviverData.Increment();
                 },
-                child: Text("Click"))
+                child: Text("Click")),
+            SizedBox(
+              height: 20,
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ReceiverDataPage()));
+                },
+                child: Text("Show"))
           ],
         ),
       ),

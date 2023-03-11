@@ -12,7 +12,7 @@ class PageViewPage extends StatefulWidget {
 }
 
 class _PageViewPageState extends State<PageViewPage> {
-  PageController _controller = PageController(
+  final PageController _controller = PageController(
     initialPage: 0,
   );
 
@@ -26,15 +26,18 @@ class _PageViewPageState extends State<PageViewPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(
-        // scrollDirection: Axis.vertical,
-        controller: _controller,
-        children: [
-          AppBarPage(),
-          RowColPage(),
-          MediaQueryPage(),
-          ListTilePage(),
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(20),
+        child: PageView(
+          scrollDirection: Axis.vertical,
+          controller: _controller,
+          children: [
+            AppBarPage(),
+            RowColPage(),
+            MediaQueryPage(),
+            ListTilePage(),
+          ],
+        ),
       ),
     );
   }

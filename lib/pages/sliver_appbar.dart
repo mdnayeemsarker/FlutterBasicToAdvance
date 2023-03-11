@@ -10,42 +10,42 @@ class SliverAppBarPage extends StatefulWidget {
 class _SliverAppBarPageState extends State<SliverAppBarPage> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: CustomScrollView(
-          slivers: [
-            const SliverAppBar(
-              pinned: true,
-              expandedHeight: 200,
-              backgroundColor: Colors.blueGrey,
-              flexibleSpace: FlexibleSpaceBar(
-                title: Text("MD. NAYEEM SARKER"),
-              ),
+    return Scaffold(
+      // appBar: AppBar(
+      //   title: Text("Sliver Appbar"),
+      // ),
+      body: CustomScrollView(
+        slivers: [
+          const SliverAppBar(
+            pinned: true,
+            expandedHeight: 200,
+            backgroundColor: Colors.blueGrey,
+            flexibleSpace: FlexibleSpaceBar(
+              title: Text("MD. NAYEEM SARKER"),
             ),
-            SliverList(
-              delegate: SliverChildListDelegate([
-                addDetails("One", "This is one's description"),
-                addDetails("Two", "This is two's description"),
-                addDetails("Three", "This is three's description"),
-                addDetails("Four", "This is four's description"),
-                addDetails("Five", "This is five's description"),
-                addDetails("Six", "This is six's description"),
-                addDetails("Seven", "This is seven's description"),
-                addDetails("Eight", "This is eight's description"),
-                addDetails("Eight", "This is eight's description"),
-                addDetails("Eight", "This is eight's description"),
-                addDetails("Eight", "This is eight's description"),
-                addDetails("Nine", "This is nine's description"),
-                addDetails("Ten", "This is ten's description"),
-                addDetails("Ten", "This is ten's description"),
-                addDetails("Ten", "This is ten's description"),
-                addDetails("Ten", "This is ten's description"),
-                addDetails("Ten", "This is ten's description"),
-              ]),
-            )
-          ],
-        ),
+          ),
+          SliverList(
+            delegate: SliverChildListDelegate([
+              addDetails("One", "This is one's description"),
+              addDetails("Two", "This is two's description"),
+              addDetails("Three", "This is three's description"),
+              addDetails("Four", "This is four's description"),
+              addDetails("Five", "This is five's description"),
+              addDetails("Six", "This is six's description"),
+              addDetails("Seven", "This is seven's description"),
+              addDetails("Eight", "This is eight's description"),
+              addDetails("Eight", "This is eight's description"),
+              addDetails("Eight", "This is eight's description"),
+              addDetails("Eight", "This is eight's description"),
+              addDetails("Nine", "This is nine's description"),
+              addDetails("Ten", "This is ten's description"),
+              addDetails("Ten", "This is ten's description"),
+              addDetails("Ten", "This is ten's description"),
+              addDetails("Ten", "This is ten's description"),
+              addDetails("Ten", "This is ten's description"),
+            ]),
+          )
+        ],
       ),
     );
   }
