@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_declarations
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
 import 'package:flutter_basic_advance/pages/app_bar.dart';
 import 'package:flutter_basic_advance/pages/bottom_navigation.dart';
 import 'package:flutter_basic_advance/pages/card_gridview.dart';
@@ -10,6 +12,7 @@ import 'package:flutter_basic_advance/pages/gradient_appbar.dart';
 import 'package:flutter_basic_advance/pages/hero_widget.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
 import 'package:flutter_basic_advance/pages/image.dart';
+import 'package:flutter_basic_advance/pages/image_picker.dart';
 import 'package:flutter_basic_advance/pages/liquid_swipe.dart';
 import 'package:flutter_basic_advance/pages/list_tile.dart';
 import 'package:flutter_basic_advance/pages/media_query.dart';
@@ -24,7 +27,6 @@ import 'package:flutter_basic_advance/pages/stateful.dart';
 import 'package:flutter_basic_advance/pages/stateless.dart';
 import 'package:flutter_basic_advance/pages/tab_bar.dart';
 import 'package:flutter_basic_advance/utils/routes.dart';
-import 'package:provider/provider.dart';
 
 void main() {
   runApp(
@@ -71,6 +73,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.gradientcolorappbarRoute: (context) =>
               const GradientColorAppbarPage(),
           MyRoutes.providerstateRoute: (context) => const ProviderStatePage(),
+          MyRoutes.imagepickerRoute: (context) => const ImagePickerPage(),
         });
   }
 }
