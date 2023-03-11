@@ -39,7 +39,6 @@ class _ProviderhomeState extends State<Providerhome> {
             ElevatedButton(
                 onPressed: () {
                   proviverData.Increment();
-                  setState(() {});
                 },
                 child: Text("Click"))
           ],
