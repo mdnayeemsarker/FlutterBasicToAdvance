@@ -30,4 +30,5 @@ class MyRoutes {
   static String richtextRoute = "/richtext";
   static String dropdownRoute = "/dropdown";
   static String dissmissableRoute = "/dissmissable";
+  static String checkboxRoute = "/checkbox";
 }

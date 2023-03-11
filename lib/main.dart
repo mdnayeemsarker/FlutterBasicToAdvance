@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/alert_dialog.dart';
+import 'package:flutter_basic_advance/pages/check_box.dart';
 import 'package:flutter_basic_advance/pages/custom_alert_dialog.dart';
 import 'package:flutter_basic_advance/pages/dismissable.dart';
 import 'package:flutter_basic_advance/pages/dropdown.dart';
@@ -90,6 +91,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.richtextRoute: (context) => const RichTextPage(),
           MyRoutes.dropdownRoute: (context) => const DropdownPage(),
           MyRoutes.dissmissableRoute: (context) => const DismissableWPage(),
+          MyRoutes.checkboxRoute: (context) => const CheckBoxPage(),
         });
   }
 }
