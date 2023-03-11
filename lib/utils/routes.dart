@@ -22,4 +22,5 @@ class MyRoutes {
   static String gradientcolorappbarRoute = "/gradientcolorappbar";
   static String providerstateRoute = "/provider_state";
   static String imagepickerRoute = "/imagepicker";
+  static String modalbtmsheetRoute = "/modalbtmsheet";
 }

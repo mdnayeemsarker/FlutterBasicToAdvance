@@ -1,7 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
+// import 'package:image_picker/image_picker.dart';
 
 class ImagePickerPage extends StatelessWidget {
   const ImagePickerPage({super.key});
@@ -25,19 +25,19 @@ class Imagepic extends StatefulWidget {
 class _ImagepickerState extends State<Imagepic> {
   File _image = File("");
 
-  Future CameraImage() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.camera);
-    setState(() {
-      _image = image;
-    });
-  }
+  // Future CameraImage() async {
+  //   var image = await ImagePicker.pickImage(source: ImageSource.camera);
+  //   setState(() {
+  //     _image = image;
+  //   });
+  // }
 
-  Future GalleryImage() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.gallery);
-    setState(() {
-      _image = image;
-    });
-  }
+  // Future GalleryImage() async {
+  //   var image = await ImagePicker.pickImage(source: ImageSource.gallery);
+  //   setState(() {
+  //     _image = image;
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -55,14 +55,14 @@ class _ImagepickerState extends State<Imagepic> {
           children: [
             FloatingActionButton(
               onPressed: () {
-                CameraImage();
+                // CameraImage();
               },
               child: Icon(Icons.camera),
             ),
             SizedBox(width: 20),
             FloatingActionButton(
               onPressed: () {
-                GalleryImage();
+                // GalleryImage();
               },
               child: Icon(Icons.photo_library),
             ),

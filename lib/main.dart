@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_declarations
 
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_advance/pages/modal_bottom_sheet.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutter_basic_advance/pages/app_bar.dart';
@@ -74,6 +75,7 @@ class MyApp extends StatelessWidget {
               const GradientColorAppbarPage(),
           MyRoutes.providerstateRoute: (context) => const ProviderStatePage(),
           MyRoutes.imagepickerRoute: (context) => const ImagePickerPage(),
+          MyRoutes.modalbtmsheetRoute: (context) => const ModalBotomSheetPage(),
         });
   }
 }
