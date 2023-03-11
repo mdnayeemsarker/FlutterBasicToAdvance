@@ -6,6 +6,7 @@ import 'package:flutter_basic_advance/pages/bottom_navigation.dart';
 import 'package:flutter_basic_advance/pages/card_gridview.dart';
 import 'package:flutter_basic_advance/pages/container.dart';
 import 'package:flutter_basic_advance/pages/expanded.dart';
+import 'package:flutter_basic_advance/pages/gradient_appbar.dart';
 import 'package:flutter_basic_advance/pages/hero_widget.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
 import 'package:flutter_basic_advance/pages/image.dart';
@@ -63,6 +64,8 @@ class MyApp extends StatelessWidget {
           MyRoutes.bottomnavbarRoute: (context) => const BottomNavigationPage(),
           MyRoutes.tabbarRoute: (context) => const TabBarPage(),
           MyRoutes.sliverappbarRoute: (context) => const SliverAppBarPage(),
+          MyRoutes.gradientcolorappbarRoute: (context) =>
+              const GradientColorAppbarPage(),
         });
   }
 }

@@ -19,4 +19,5 @@ class MyRoutes {
   static String bottomnavbarRoute = "/bottomnavigationbar";
   static String tabbarRoute = "/tabbar";
   static String sliverappbarRoute = "/sliverappbar";
+  static String gradientcolorappbarRoute = "/gradientcolorappbar";
 }

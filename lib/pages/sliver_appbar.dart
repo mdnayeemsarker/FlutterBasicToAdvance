@@ -15,7 +15,7 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
       home: Scaffold(
         body: CustomScrollView(
           slivers: [
-            SliverAppBar(
+            const SliverAppBar(
               pinned: true,
               expandedHeight: 200,
               backgroundColor: Colors.blueGrey,
@@ -32,6 +32,9 @@ class _SliverAppBarPageState extends State<SliverAppBarPage> {
                 addDetails("Five", "This is five's description"),
                 addDetails("Six", "This is six's description"),
                 addDetails("Seven", "This is seven's description"),
+                addDetails("Eight", "This is eight's description"),
+                addDetails("Eight", "This is eight's description"),
+                addDetails("Eight", "This is eight's description"),
                 addDetails("Eight", "This is eight's description"),
                 addDetails("Nine", "This is nine's description"),
                 addDetails("Ten", "This is ten's description"),
