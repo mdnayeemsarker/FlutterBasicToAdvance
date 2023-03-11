@@ -25,4 +25,5 @@ class MyRoutes {
   static String modalbtmsheetRoute = "/modalbtmsheet";
   static String alertdialogRoute = "/alertdialog";
   static String customalrtdlgRoute = "/customalrtdlg";
+  static String snackbarRoute = "/snackbar";
 }

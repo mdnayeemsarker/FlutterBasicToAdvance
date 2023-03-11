@@ -261,6 +261,24 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text("Thanks for making snackbar"),
+                    duration: Duration(seconds: 5),
+                    action: SnackBarAction(
+                        label: "View more",
+                        onPressed: () {
+                          Navigator.pushNamed(context, MyRoutes.snackbarRoute);
+                        }),
+                  ));
+                },
+                title: const Text("Snack Bar"),
+                trailing: const Icon(Icons.check),
+              ),
+            ),
           ]),
         ),
         drawer: const MyDrawer(),
