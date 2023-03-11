@@ -29,4 +29,5 @@ class MyRoutes {
   static String sliderRoute = "/slider";
   static String richtextRoute = "/richtext";
   static String dropdownRoute = "/dropdown";
+  static String dissmissableRoute = "/dissmissable";
 }
