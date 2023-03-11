@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/alert_dialog.dart';
 import 'package:flutter_basic_advance/pages/custom_alert_dialog.dart';
+import 'package:flutter_basic_advance/pages/dropdown.dart';
 import 'package:flutter_basic_advance/pages/modal_bottom_sheet.dart';
 import 'package:flutter_basic_advance/pages/rich_text.dart';
 import 'package:flutter_basic_advance/pages/slider.dart';
@@ -86,6 +87,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.snackbarRoute: (context) => const SnackBarPage(),
           MyRoutes.sliderRoute: (context) => const SliderPage(),
           MyRoutes.richtextRoute: (context) => const RichTextPage(),
+          MyRoutes.dropdownRoute: (context) => const DropdownPage(),
         });
   }
 }
