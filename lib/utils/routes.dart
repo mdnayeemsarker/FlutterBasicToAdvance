@@ -32,4 +32,5 @@ class MyRoutes {
   static String dissmissableRoute = "/dissmissable";
   static String checkboxRoute = "/checkbox";
   static String animatedcfRoute = "/animatedcf";
+  static String switch_widgetRoute = "/switch_widget";
 }

@@ -11,6 +11,7 @@ import 'package:flutter_basic_advance/pages/modal_bottom_sheet.dart';
 import 'package:flutter_basic_advance/pages/rich_text.dart';
 import 'package:flutter_basic_advance/pages/slider.dart';
 import 'package:flutter_basic_advance/pages/snakbar.dart';
+import 'package:flutter_basic_advance/pages/switch_widget.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutter_basic_advance/pages/app_bar.dart';
@@ -94,6 +95,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.dissmissableRoute: (context) => const DismissableWPage(),
           MyRoutes.checkboxRoute: (context) => const CheckBoxPage(),
           MyRoutes.animatedcfRoute: (context) => const AnimatedCFPage(),
+          MyRoutes.switch_widgetRoute: (context) => const SwitchWidgetPage(),
         });
   }
 }
