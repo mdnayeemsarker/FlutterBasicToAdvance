@@ -19,248 +19,36 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.stateLessRoute);
-                },
-                title: const Text("Stateless Widget"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.stateFulRoute);
-                },
-                title: const Text("Statefull Widget"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.appBarRoute);
-                },
-                title: const Text("Appbar & text widget"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.safeAreaRoute);
-                },
-                title: const Text("Safe Area"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.containerRoute);
-                },
-                title: const Text("Container"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.rowColRoute);
-                },
-                title: const Text("Row & Column"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.mediaQueryRoute);
-                },
-                title: const Text("Media Query"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.listTileRoute);
-                },
-                title: const Text("List Tile"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(
-                      context, MyRoutes.stackPositionFlotingRoute);
-                },
-                title: const Text("Stack Position FlotingAction Button"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.imageRoute);
-                },
-                title: const Text("Image assets / network"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.liquidSeipeRoute);
-                },
-                title: const Text("Liquid Swipe"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.cardGridViewRoute);
-                },
-                title: const Text("Card & GridView"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.expandedRoute);
-                },
-                title: const Text("Expanded Widget"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.pageViewRoute);
-                },
-                title: const Text("Page View"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.heroWidgetRoute);
-                },
-                title: const Text("Hero Widget"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.bottomnavbarRoute);
-                },
-                title: const Text("Bottom Navigation Bar"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.tabbarRoute);
-                },
-                title: const Text("Tab Bar"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.sliverappbarRoute);
-                },
-                title: const Text("Sliver App Bar"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(
-                      context, MyRoutes.gradientcolorappbarRoute);
-                },
-                title: const Text("Appbar Gradient Color "),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.providerstateRoute);
-                },
-                title: const Text("Provider State management"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.imagepickerRoute);
-                },
-                title: const Text("Image Picker"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.modalbtmsheetRoute);
-                },
-                title: const Text("Modal Bottom Sheet"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.alertdialogRoute);
-                },
-                title: const Text("Alert Dialog"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.customalrtdlgRoute);
-                },
-                title: const Text("Custom Alert Dialog"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
+            cardWidget(context, "Stateless Widget", MyRoutes.stateLessRoute),
+            cardWidget(context, "Statefull Widget", MyRoutes.stateFulRoute),
+            cardWidget(context, "Appbar & text widget", MyRoutes.appBarRoute),
+            cardWidget(context, "Safe Area", MyRoutes.safeAreaRoute),
+            cardWidget(context, "Container", MyRoutes.containerRoute),
+            cardWidget(context, "Row & Column", MyRoutes.rowColRoute),
+            cardWidget(context, "Media Query", MyRoutes.mediaQueryRoute),
+            cardWidget(context, "List Tile", MyRoutes.listTileRoute),
+            cardWidget(context, "Stack Position FlotingAction Button",
+                MyRoutes.stackPFRoute),
+            cardWidget(context, "Image assets / network", MyRoutes.imageRoute),
+            cardWidget(context, "Liquid Swipe", MyRoutes.liquidSeipeRoute),
+            cardWidget(context, "Card & GridView", MyRoutes.cardGridViewRoute),
+            cardWidget(context, "Expanded Widget", MyRoutes.expandedRoute),
+            cardWidget(context, "Page View", MyRoutes.pageViewRoute),
+            cardWidget(context, "Hero Widget", MyRoutes.heroWidgetRoute),
+            cardWidget(
+                context, "Bottom Navigation Bar", MyRoutes.bottomnavbarRoute),
+            cardWidget(context, "Tab Bar", MyRoutes.tabbarRoute),
+            cardWidget(context, "Sliver App Bar", MyRoutes.sliverappbarRoute),
+            cardWidget(
+                context, "Appbar Gradient Color", MyRoutes.gradientappRoute),
+            cardWidget(context, "Provider State management",
+                MyRoutes.providerstateRoute),
+            cardWidget(context, "Image Picker", MyRoutes.imagepickerRoute),
+            cardWidget(
+                context, "Modal Bottom Sheet", MyRoutes.modalbtmsheetRoute),
+            cardWidget(context, "Alert Dialog", MyRoutes.alertdialogRoute),
+            cardWidget(
+                context, "Custom Alert Dialog", MyRoutes.customalrtdlgRoute),
             Card(
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: ListTile(
@@ -279,79 +67,30 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.sliderRoute);
-                },
-                title: const Text("Slider"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.richtextRoute);
-                },
-                title: const Text("Rich Text"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.dropdownRoute);
-                },
-                title: const Text("Dropdown"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.dissmissableRoute);
-                },
-                title: const Text("Dismissable"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.checkboxRoute);
-                },
-                title: const Text("Checkbox"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.animatedcfRoute);
-                },
-                title: const Text("Animated Cross Feed"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
-            Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-              child: ListTile(
-                onTap: () {
-                  Navigator.pushNamed(context, MyRoutes.switch_widgetRoute);
-                },
-                title: const Text("Switch Widget"),
-                trailing: const Icon(Icons.check),
-              ),
-            ),
+            cardWidget(context, "Slider", MyRoutes.sliderRoute),
+            cardWidget(context, "Rich Text", MyRoutes.richtextRoute),
+            cardWidget(context, "Dropdown", MyRoutes.dropdownRoute),
+            cardWidget(context, "Dismissable", MyRoutes.dissmissableRoute),
+            cardWidget(context, "Checkbox", MyRoutes.checkboxRoute),
+            cardWidget(
+                context, "Animated Cross Feed", MyRoutes.animatedcfRoute),
+            cardWidget(context, "Switch Widget", MyRoutes.switch_widgetRoute),
           ]),
         ),
         drawer: const MyDrawer(),
+      ),
+    );
+  }
+
+  Widget cardWidget(BuildContext context, String title, String route) {
+    return Card(
+      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      child: ListTile(
+        onTap: () {
+          Navigator.pushNamed(context, route);
+        },
+        title: Text(title),
+        trailing: const Icon(Icons.check),
       ),
     );
   }

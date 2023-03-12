@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.rowColRoute: (context) => const RowColPage(),
           MyRoutes.mediaQueryRoute: (context) => const MediaQueryPage(),
           MyRoutes.listTileRoute: (context) => const ListTilePage(),
-          MyRoutes.stackPositionFlotingRoute: (context) => const SPFPage(),
+          MyRoutes.stackPFRoute: (context) => const SPFPage(),
           MyRoutes.imageRoute: (context) => const ImagePage(),
           MyRoutes.liquidSeipeRoute: (context) => const LiquidSwipePage(),
           MyRoutes.cardGridViewRoute: (context) => const CardGridViewPage(),
@@ -81,8 +81,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.bottomnavbarRoute: (context) => const BottomNavigationPage(),
           MyRoutes.tabbarRoute: (context) => const TabBarPage(),
           MyRoutes.sliverappbarRoute: (context) => const SliverAppBarPage(),
-          MyRoutes.gradientcolorappbarRoute: (context) =>
-              const GradientColorAppbarPage(),
+          MyRoutes.gradientappRoute: (context) => const GradientCABPage(),
           MyRoutes.providerstateRoute: (context) => const ProviderStatePage(),
           MyRoutes.imagepickerRoute: (context) => const ImagePickerPage(),
           MyRoutes.modalbtmsheetRoute: (context) => const ModalBotomSheetPage(),

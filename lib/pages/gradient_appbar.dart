@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 
-class GradientColorAppbarPage extends StatefulWidget {
-  const GradientColorAppbarPage({super.key});
+class GradientCABPage extends StatefulWidget {
+  const GradientCABPage({super.key});
 
   @override
-  State<GradientColorAppbarPage> createState() =>
-      _GradientColorAppbarPageState();
+  State<GradientCABPage> createState() => _GradientColorAppbarPageState();
 }
 
-class _GradientColorAppbarPageState extends State<GradientColorAppbarPage> {
+class _GradientColorAppbarPageState extends State<GradientCABPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

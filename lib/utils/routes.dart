@@ -8,7 +8,7 @@ class MyRoutes {
   static String rowColRoute = "/row_column";
   static String mediaQueryRoute = "/mediaquery";
   static String listTileRoute = "/listtile";
-  static String stackPositionFlotingRoute = "/spf";
+  static String stackPFRoute = "/spf";
   static String imageRoute = "/image";
   static String liquidSeipeRoute = "/liquid_swipe";
   static String cardGridViewRoute = "/cardGridViewRoute";
@@ -19,7 +19,7 @@ class MyRoutes {
   static String bottomnavbarRoute = "/bottomnavigationbar";
   static String tabbarRoute = "/tabbar";
   static String sliverappbarRoute = "/sliverappbar";
-  static String gradientcolorappbarRoute = "/gradientcolorappbar";
+  static String gradientappRoute = "/gradientcolorappbar";
   static String providerstateRoute = "/provider_state";
   static String imagepickerRoute = "/imagepicker";
   static String modalbtmsheetRoute = "/modalbtmsheet";
