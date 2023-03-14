@@ -1,7 +1,8 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-// import 'package:image_picker/image_picker.dart';
+// ignore: import_of_legacy_library_into_null_safe
+import 'package:image_picker/image_picker.dart';
 
 class ImagePickerPage extends StatelessWidget {
   const ImagePickerPage({super.key});
@@ -9,8 +10,8 @@ class ImagePickerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Image Picker")),
-      body: Imagepic(),
+      appBar: AppBar(title: const Text("Image Picker")),
+      body: const Imagepic(),
     );
   }
 }
@@ -25,19 +26,27 @@ class Imagepic extends StatefulWidget {
 class _ImagepickerState extends State<Imagepic> {
   File _image = File("");
 
-  // Future CameraImage() async {
-  //   var image = await ImagePicker.pickImage(source: ImageSource.camera);
-  //   setState(() {
-  //     _image = image;
-  //   });
-  // }
+  Future CameraImage() async {
+    var image = await ImagePicker().getImage(
+      source: ImageSource.camera,
+      maxWidth: 1800,
+      maxHeight: 1800,
+    );
+    setState(() {
+      _image = File(image.path);
+    });
+  }
 
-  // Future GalleryImage() async {
-  //   var image = await ImagePicker.pickImage(source: ImageSource.gallery);
-  //   setState(() {
-  //     _image = image;
-  //   });
-  // }
+  Future GalleryImage() async {
+    var image = await ImagePicker().getImage(
+      source: ImageSource.gallery,
+      maxWidth: 1800,
+      maxHeight: 1800,
+    );
+    setState(() {
+      _image = File(image.path);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,24 +56,24 @@ class _ImagepickerState extends State<Imagepic> {
           height: 500,
           width: double.infinity,
           color: Colors.blue,
-          child: _image != null ? Image.file(_image) : Text("null"),
+          child: _image != null ? Image.file(_image) : const Text("null"),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FloatingActionButton(
               onPressed: () {
-                // CameraImage();
+                CameraImage();
               },
-              child: Icon(Icons.camera),
+              child: const Icon(Icons.camera),
             ),
-            SizedBox(width: 20),
+            const SizedBox(width: 20),
             FloatingActionButton(
               onPressed: () {
-                // GalleryImage();
+                GalleryImage();
               },
-              child: Icon(Icons.photo_library),
+              child: const Icon(Icons.photo_library),
             ),
           ],
         )
