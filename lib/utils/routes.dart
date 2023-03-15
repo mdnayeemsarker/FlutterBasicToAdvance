@@ -35,4 +35,5 @@ class MyRoutes {
   // ignore: non_constant_identifier_names
   static String switch_widgetRoute = "/switch_widget";
   static String curvedNBRoute = "/curvedNB";
+  static String animatedConRoute = "/animatedCon";
 }

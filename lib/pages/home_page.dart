@@ -90,6 +90,7 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
+            cardWidget(ctx, "Animated Container", MyRoutes.animatedConRoute),
           ]),
         ),
         drawer: MyDrawer(),

@@ -2,6 +2,7 @@
 
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_advance/pages/animated_container.dart';
 import 'package:flutter_basic_advance/pages/curved_navbar.dart';
 import 'package:provider/provider.dart';
 
@@ -98,6 +99,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.animatedcfRoute: (context) => const AnimatedCFPage(),
           MyRoutes.switch_widgetRoute: (context) => const SwitchWidgetPage(),
           MyRoutes.curvedNBRoute: (context) => const CurvedNavbarPage(),
+          MyRoutes.animatedConRoute: (context) => const AnimatedConPage(),
         });
   }
 }
