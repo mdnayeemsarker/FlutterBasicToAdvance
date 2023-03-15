@@ -12,12 +12,12 @@ class HomePage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("Flutter BTA"),
+          title: Text("Flutter BTA"),
         ),
         floatingActionButton:
             FloatingActionButton(onPressed: () {}, child: Icon(Icons.add)),
         body: Padding(
-          padding: const EdgeInsets.all(20),
+          padding: EdgeInsets.all(20),
           child: ListView(children: [
             cardWidget(context, "Stateless Widget", MyRoutes.stateLessRoute),
             cardWidget(context, "Statefull Widget", MyRoutes.stateFulRoute),
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
             cardWidget(
                 context, "Custom Alert Dialog", MyRoutes.customalrtdlgRoute),
             Card(
-              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: ListTile(
                 onTap: () {
                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
@@ -63,8 +63,8 @@ class HomePage extends StatelessWidget {
                         }),
                   ));
                 },
-                title: const Text("Snack Bar"),
-                trailing: const Icon(Icons.check),
+                title: Text("Snack Bar"),
+                trailing: Icon(Icons.check),
               ),
             ),
             cardWidget(context, "Slider", MyRoutes.sliderRoute),
@@ -77,36 +77,36 @@ class HomePage extends StatelessWidget {
             cardWidget(context, "Switch Widget", MyRoutes.switch_widgetRoute),
           ]),
         ),
-        drawer: const MyDrawer(),
+        drawer: MyDrawer(),
       ),
     );
   }
 
   Widget cardWidget(BuildContext context, String title, String route) {
     return Card(
-      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+      margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
       child: ListTile(
         onTap: () {
           Navigator.pushNamed(context, route);
         },
         title: Text(title),
-        trailing: const Icon(Icons.check),
+        trailing: Icon(Icons.check),
       ),
     );
   }
 }
 
 class MyDrawer extends StatelessWidget {
-  const MyDrawer({super.key});
+  MyDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
-    const imageUrl =
+    final imageUrl =
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ3HHIEm2rSoBDwYWiM3BG7Wcd4m-JmwGRwQ&usqp=CAU";
     return Drawer(
       child: ListView(
         children: [
-          const DrawerHeader(
+          DrawerHeader(
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 accountName: Text("MD. NAYEEM SARKER"),
@@ -118,11 +118,11 @@ class MyDrawer extends StatelessWidget {
               )),
           ListTile(
             onTap: () {},
-            leading: const Icon(
+            leading: Icon(
               CupertinoIcons.home,
               color: Colors.black,
             ),
-            title: const Text(
+            title: Text(
               "Home",
               textScaleFactor: 1.2,
               style: TextStyle(color: Colors.black),
@@ -130,11 +130,11 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {},
-            leading: const Icon(
+            leading: Icon(
               CupertinoIcons.profile_circled,
               color: Colors.black,
             ),
-            title: const Text(
+            title: Text(
               "Profile",
               textScaleFactor: 1.2,
               style: TextStyle(color: Colors.black),
@@ -142,11 +142,11 @@ class MyDrawer extends StatelessWidget {
           ),
           ListTile(
             onTap: () {},
-            leading: const Icon(
+            leading: Icon(
               CupertinoIcons.chat_bubble,
               color: Colors.black,
             ),
-            title: const Text(
+            title: Text(
               "Support",
               textScaleFactor: 1.2,
               style: TextStyle(color: Colors.black),
