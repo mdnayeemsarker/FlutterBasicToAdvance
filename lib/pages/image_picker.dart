@@ -35,7 +35,9 @@ class _ImagepickerState extends State<Imagepic> {
             height: 500,
             width: double.infinity,
             color: Colors.blue,
-            child: _image != null ? Image.file(_image as File) : Text("null"),
+            child: _image != null
+                ? Image.file(_image as File)
+                : Center(child: Text("null")),
           ),
           SizedBox(height: 10),
           Row(
@@ -49,7 +51,7 @@ class _ImagepickerState extends State<Imagepic> {
                     });
                   }),
               SizedBox(width: 10),
-              FloatingActionButton(
+              ElevatedButton(
                   child: Icon(Icons.photo_library),
                   onPressed: () {
                     setState(() {

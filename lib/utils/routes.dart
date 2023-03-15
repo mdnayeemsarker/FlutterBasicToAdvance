@@ -32,5 +32,7 @@ class MyRoutes {
   static String dissmissableRoute = "/dissmissable";
   static String checkboxRoute = "/checkbox";
   static String animatedcfRoute = "/animatedcf";
+  // ignore: non_constant_identifier_names
   static String switch_widgetRoute = "/switch_widget";
+  static String curvedNBRoute = "/curvedNB";
 }
