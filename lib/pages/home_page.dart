@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/utils/routes.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -72,6 +73,23 @@ class HomePage extends StatelessWidget {
             cardWidget(ctx, "Animated Cross Feed", MyRoutes.animatedcfRoute),
             cardWidget(ctx, "Switch Widget", MyRoutes.switch_widgetRoute),
             cardWidget(ctx, "Curved Navigatopn Bar", MyRoutes.curvedNBRoute),
+            Card(
+              margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+              child: ListTile(
+                onTap: () {
+                  Fluttertoast.showToast(
+                      msg: "This is Center Short Toast",
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.CENTER,
+                      timeInSecForIosWeb: 1,
+                      backgroundColor: Colors.red,
+                      textColor: Colors.white,
+                      fontSize: 16.0);
+                },
+                title: const Text("Toast"),
+                trailing: const Icon(Icons.check),
+              ),
+            ),
           ]),
         ),
         drawer: MyDrawer(),
