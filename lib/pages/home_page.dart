@@ -94,6 +94,7 @@ class HomePage extends StatelessWidget {
             cardWidget(ctx, "Expansion TIle", MyRoutes.expansionTileRoute),
             cardWidget(ctx, "Backdrop Filter", MyRoutes.backdropFilterRoute),
             cardWidget(ctx, "Date & Time Picker", MyRoutes.dateTimePickerRoute),
+            cardWidget(ctx, "Transform Widget", MyRoutes.transformWidgetRoute),
           ]),
         ),
         drawer: MyDrawer(),

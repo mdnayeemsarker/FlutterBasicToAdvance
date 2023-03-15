@@ -39,4 +39,5 @@ class MyRoutes {
   static String expansionTileRoute = "/expansionTile";
   static String backdropFilterRoute = "/backdropFilter";
   static String dateTimePickerRoute = "/dateTimePicker";
+  static String transformWidgetRoute = "/transformWidget";
 }
