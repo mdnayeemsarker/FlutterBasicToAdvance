@@ -100,14 +100,17 @@ class HomePage extends StatelessWidget {
   }
 
   Widget cardWidget(BuildContext context, String title, String route) {
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-      child: ListTile(
-        onTap: () {
-          Navigator.pushNamed(context, route);
-        },
-        title: Text(title),
-        trailing: const Icon(Icons.check),
+    return Tooltip(
+      message: title,
+      child: Card(
+        margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        child: ListTile(
+          onTap: () {
+            Navigator.pushNamed(context, route);
+          },
+          title: Text(title),
+          trailing: const Icon(Icons.check),
+        ),
       ),
     );
   }
