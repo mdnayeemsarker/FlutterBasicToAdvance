@@ -92,6 +92,7 @@ class HomePage extends StatelessWidget {
             ),
             cardWidget(ctx, "Animated Container", MyRoutes.animatedConRoute),
             cardWidget(ctx, "Expansion TIle", MyRoutes.expansionTileRoute),
+            cardWidget(ctx, "Backdrop Filter", MyRoutes.backdropFilterRoute),
           ]),
         ),
         drawer: MyDrawer(),

@@ -37,4 +37,5 @@ class MyRoutes {
   static String curvedNBRoute = "/curvedNB";
   static String animatedConRoute = "/animatedCon";
   static String expansionTileRoute = "/expansionTile";
+  static String backdropFilterRoute = "/backdropFilter";
 }
