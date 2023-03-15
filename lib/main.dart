@@ -4,6 +4,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/animated_container.dart';
 import 'package:flutter_basic_advance/pages/curved_navbar.dart';
+import 'package:flutter_basic_advance/pages/expansion_tile.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutter_basic_advance/pages/alert_dialog.dart';
@@ -100,6 +101,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.switch_widgetRoute: (context) => const SwitchWidgetPage(),
           MyRoutes.curvedNBRoute: (context) => const CurvedNavbarPage(),
           MyRoutes.animatedConRoute: (context) => const AnimatedConPage(),
+          MyRoutes.expansionTileRoute: (context) => const ExpansionTilePage(),
         });
   }
 }

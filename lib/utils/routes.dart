@@ -36,4 +36,5 @@ class MyRoutes {
   static String switch_widgetRoute = "/switch_widget";
   static String curvedNBRoute = "/curvedNB";
   static String animatedConRoute = "/animatedCon";
+  static String expansionTileRoute = "/expansionTile";
 }
