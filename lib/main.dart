@@ -9,6 +9,7 @@ import 'package:flutter_basic_advance/pages/datatable.dart';
 import 'package:flutter_basic_advance/pages/date_time_picker.dart';
 import 'package:flutter_basic_advance/pages/expansion_tile.dart';
 import 'package:flutter_basic_advance/pages/http_reqest.dart';
+import 'package:flutter_basic_advance/pages/navigation_rail.dart';
 import 'package:flutter_basic_advance/pages/transform_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -113,6 +114,7 @@ class MyApp extends StatelessWidget {
               const TransformWidgetPage(),
           MyRoutes.httpRequestRoute: (context) => const HttpRequestPage(),
           MyRoutes.dataTableRoute: (context) => const DatatablePage(),
+          MyRoutes.navRailRoute: (context) => const NavRailPage(),
         });
   }
 }

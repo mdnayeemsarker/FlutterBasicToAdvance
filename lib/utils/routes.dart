@@ -42,4 +42,5 @@ class MyRoutes {
   static String transformWidgetRoute = "/transformWidget";
   static String httpRequestRoute = "/httpRequest";
   static String dataTableRoute = "/dataTable";
+  static String navRailRoute = "/navRail";
 }

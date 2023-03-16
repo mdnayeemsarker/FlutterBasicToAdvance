@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [
+            cardWidget(ctx, "Navigation Rail", MyRoutes.navRailRoute),
             cardWidget(ctx, "Data Table", MyRoutes.dataTableRoute),
             cardWidget(ctx, "Fetching Json Data with Http request",
                 MyRoutes.httpRequestRoute),
