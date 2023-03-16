@@ -40,4 +40,5 @@ class MyRoutes {
   static String backdropFilterRoute = "/backdropFilter";
   static String dateTimePickerRoute = "/dateTimePicker";
   static String transformWidgetRoute = "/transformWidget";
+  static String httpRequestRoute = "/httpRequest";
 }

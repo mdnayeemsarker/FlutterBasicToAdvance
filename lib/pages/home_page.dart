@@ -95,6 +95,8 @@ class HomePage extends StatelessWidget {
             cardWidget(ctx, "Backdrop Filter", MyRoutes.backdropFilterRoute),
             cardWidget(ctx, "Date & Time Picker", MyRoutes.dateTimePickerRoute),
             cardWidget(ctx, "Transform Widget", MyRoutes.transformWidgetRoute),
+            cardWidget(ctx, "Fetching Json Data with Http request",
+                MyRoutes.httpRequestRoute),
           ]),
         ),
         drawer: MyDrawer(),
