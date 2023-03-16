@@ -11,6 +11,7 @@ import 'package:flutter_basic_advance/pages/expansion_tile.dart';
 import 'package:flutter_basic_advance/pages/http_reqest.dart';
 import 'package:flutter_basic_advance/pages/navigation_rail.dart';
 import 'package:flutter_basic_advance/pages/pass_data_one.dart';
+import 'package:flutter_basic_advance/pages/splash_screen.dart';
 import 'package:flutter_basic_advance/pages/transform_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -70,7 +71,7 @@ class MyApp extends StatelessWidget {
         darkTheme: ThemeData(brightness: Brightness.dark
             // primarySwatch: Colors.blueGrey
             ),
-        initialRoute: MyRoutes.homeRoute,
+        initialRoute: MyRoutes.splashScreenRoute,
         routes: {
           "/": (context) => HomePage(),
           MyRoutes.homeRoute: (context) => HomePage(),
@@ -117,6 +118,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.dataTableRoute: (context) => const DatatablePage(),
           MyRoutes.navRailRoute: (context) => const NavRailPage(),
           MyRoutes.passDataRoute: (context) => const PassDataOnePage(),
+          MyRoutes.splashScreenRoute: (context) => const SplashScreenPage(),
         });
   }
 }

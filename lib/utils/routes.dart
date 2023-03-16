@@ -44,4 +44,5 @@ class MyRoutes {
   static String dataTableRoute = "/dataTable";
   static String navRailRoute = "/navRail";
   static String passDataRoute = "/passData";
+  static String splashScreenRoute = "/splashScreen";
 }
