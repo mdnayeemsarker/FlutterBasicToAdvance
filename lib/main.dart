@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/animated_container.dart';
 import 'package:flutter_basic_advance/pages/backdrop_filter.dart';
 import 'package:flutter_basic_advance/pages/curved_navbar.dart';
+import 'package:flutter_basic_advance/pages/datatable.dart';
 import 'package:flutter_basic_advance/pages/date_time_picker.dart';
 import 'package:flutter_basic_advance/pages/expansion_tile.dart';
 import 'package:flutter_basic_advance/pages/http_reqest.dart';
@@ -108,8 +109,10 @@ class MyApp extends StatelessWidget {
           MyRoutes.expansionTileRoute: (context) => const ExpansionTilePage(),
           MyRoutes.backdropFilterRoute: (context) => const BackdropFilterPage(),
           MyRoutes.dateTimePickerRoute: (context) => const DateTimePage(),
-          MyRoutes.transformWidgetRoute: (context) => const TransformWidgetPage(),
+          MyRoutes.transformWidgetRoute: (context) =>
+              const TransformWidgetPage(),
           MyRoutes.httpRequestRoute: (context) => const HttpRequestPage(),
+          MyRoutes.dataTableRoute: (context) => const DatatablePage(),
         });
   }
 }

@@ -41,4 +41,5 @@ class MyRoutes {
   static String dateTimePickerRoute = "/dateTimePicker";
   static String transformWidgetRoute = "/transformWidget";
   static String httpRequestRoute = "/httpRequest";
+  static String dataTableRoute = "/dataTable";
 }

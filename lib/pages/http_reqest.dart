@@ -26,7 +26,7 @@ class _HttpRequestState extends State<HttpRequest> {
   // ignore: prefer_typing_uninitialized_variables
   var data;
 
-  Future getHttpData() async {
+  getHttpData() async {
     String url = "https://dummyjson.com/products";
 
     var response = await http.get(Uri.parse(url));
@@ -58,33 +58,38 @@ class _HttpRequestState extends State<HttpRequest> {
 
               return Padding(
                 padding: const EdgeInsets.symmetric(vertical: 5),
-                child: data == null
-                    ? const Center(
-                        child: CircularProgressIndicator(
-                          color: Colors.amber,
-                        ),
-                      )
-                    : ListTile(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      DetailsPage(receivedData: fData)));
-                        },
-                        title: Text(fData["title"]),
-                        subtitle: Text(fData["description"]),
-                        leading: Image.network(
-                          fData["thumbnail"],
-                          height: 100,
-                          width: 100,
-                          fit: BoxFit.contain,
-                        ),
-                        trailing: Column(children: [
-                          Text("\$${fData["price"]}"),
-                          Text("*${fData["rating"]}".toString()),
-                        ]),
-                      ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    data == null
+                        ? const Center(
+                            child: CircularProgressIndicator(
+                              color: Colors.amber,
+                            ),
+                          )
+                        : ListTile(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          DetailsPage(receivedData: fData)));
+                            },
+                            title: Text(fData["title"]),
+                            subtitle: Text(fData["description"]),
+                            leading: Image.network(
+                              fData["thumbnail"],
+                              height: 100,
+                              width: 100,
+                              fit: BoxFit.contain,
+                            ),
+                            trailing: Column(children: [
+                              Text("\$${fData["price"]}"),
+                              Text("*${fData["rating"]}".toString()),
+                            ]),
+                          ),
+                  ],
+                ),
               );
             },
           )),

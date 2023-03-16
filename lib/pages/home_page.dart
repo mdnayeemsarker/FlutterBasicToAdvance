@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/utils/routes.dart';
@@ -20,6 +18,7 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [
+            cardWidget(ctx, "Data Table", MyRoutes.dataTableRoute),
             cardWidget(ctx, "Fetching Json Data with Http request",
                 MyRoutes.httpRequestRoute),
             cardWidget(ctx, "Transform Widget", MyRoutes.transformWidgetRoute),
