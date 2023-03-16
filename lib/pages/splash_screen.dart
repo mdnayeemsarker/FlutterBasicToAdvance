@@ -1,7 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_basic_advance/pages/home_page.dart';
 import 'package:flutter_basic_advance/pages/onboarding_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({super.key});
@@ -20,13 +22,22 @@ class SplashScreenpage extends StatefulWidget {
 }
 
 class _SplashScreenpageState extends State<SplashScreenpage> {
+  bool? isViewed;
+
+  checkIsViewed() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    isViewed = pref.getBool("isIntroductionViewed") ?? false;
+  }
+
   @override
   void initState() {
-    Timer(Duration(seconds: 2), () {
+    checkIsViewed();
+    Timer(const Duration(seconds: 2), () {
       Navigator.push(
           context,
           CupertinoPageRoute(
-            builder: (context) => OnBoardingPage(),
+            builder: (context) =>
+                isViewed == true ? const HomePage() : const OnBoardingPage(),
           ));
     });
     super.initState();

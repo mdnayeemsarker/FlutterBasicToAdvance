@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({super.key});
@@ -20,6 +21,13 @@ class OnBoarding extends StatefulWidget {
 }
 
 class _OnBoardingState extends State<OnBoarding> {
+  checkIsViewed() async {
+    SharedPreferences pref = await SharedPreferences.getInstance();
+    setState(() {
+      pref.setBool("isIntroductionViewed", true);
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -46,6 +54,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     "https://cdn1.smartprix.com/rx-iEfM9LzwK-w1200-h1200/EfM9LzwK.jpg")),
           ],
           onDone: () {
+            checkIsViewed();
             Navigator.push(context,
                 CupertinoPageRoute(builder: (context) => const HomePage()));
           },

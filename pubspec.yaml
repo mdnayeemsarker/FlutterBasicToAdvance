@@ -40,6 +40,7 @@ dependencies:
   # cloud_firestore: ^4.4.5
   flutter_carousel_slider: ^1.1.0
   introduction_screen: ^3.1.7
+  shared_preferences: ^2.0.18
 
 
   # The following adds the Cupertino Icons font to your application.

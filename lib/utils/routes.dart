@@ -47,4 +47,5 @@ class MyRoutes {
   static String splashScreenRoute = "/splashScreen";
   static String carSliderRoute = "/carSlider";
   static String onBoardingRoute = "/onBoarding";
+  static String sharedPreRoute = "/sharedPre";
 }

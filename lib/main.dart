@@ -12,6 +12,7 @@ import 'package:flutter_basic_advance/pages/expansion_tile.dart';
 import 'package:flutter_basic_advance/pages/http_reqest.dart';
 import 'package:flutter_basic_advance/pages/navigation_rail.dart';
 import 'package:flutter_basic_advance/pages/pass_data_one.dart';
+import 'package:flutter_basic_advance/pages/shared_preferences.dart';
 import 'package:flutter_basic_advance/pages/splash_screen.dart';
 import 'package:flutter_basic_advance/pages/transform_widget.dart';
 import 'package:provider/provider.dart';
@@ -54,7 +55,7 @@ import 'package:flutter_basic_advance/utils/routes.dart';
 
 void main() {
   runApp(
-      ChangeNotifierProvider(create: (context) => StateData(), child: MyApp()));
+      ChangeNotifierProvider(create: (context) => StateData(), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -74,8 +75,8 @@ class MyApp extends StatelessWidget {
             ),
         initialRoute: MyRoutes.splashScreenRoute,
         routes: {
-          "/": (context) => HomePage(),
-          MyRoutes.homeRoute: (context) => HomePage(),
+          "/": (context) => const HomePage(),
+          MyRoutes.homeRoute: (context) => const HomePage(),
           MyRoutes.stateLessRoute: (context) => const StateLess(),
           MyRoutes.stateFulRoute: (context) => const StateFul(),
           MyRoutes.appBarRoute: (context) => const AppBarPage(),
@@ -121,6 +122,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.passDataRoute: (context) => const PassDataOnePage(),
           MyRoutes.splashScreenRoute: (context) => const SplashScreenPage(),
           MyRoutes.carSliderRoute: (context) => const CarouselSliderPage(),
+          MyRoutes.sharedPreRoute: (context) => const SharedPrePage(),
         });
   }
 }
