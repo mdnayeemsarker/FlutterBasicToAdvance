@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_basic_advance/pages/home_page.dart';
+import 'package:flutter_basic_advance/pages/onboarding_screen.dart';
 
 class SplashScreenPage extends StatelessWidget {
   const SplashScreenPage({super.key});
@@ -26,7 +26,7 @@ class _SplashScreenpageState extends State<SplashScreenpage> {
       Navigator.push(
           context,
           CupertinoPageRoute(
-            builder: (context) => HomePage(),
+            builder: (context) => OnBoardingPage(),
           ));
     });
     super.initState();

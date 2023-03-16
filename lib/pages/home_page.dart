@@ -4,10 +4,10 @@ import 'package:flutter_basic_advance/utils/routes.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class HomePage extends StatelessWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
-  Widget build(BuildContext ctx) {
+  Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -18,17 +18,22 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [
-            cardWidget(ctx, "Carousel Slider", MyRoutes.carSliderRoute),
-            cardWidget(ctx, "Pass Data One page to Another Page", MyRoutes.passDataRoute),
-            cardWidget(ctx, "Navigation Rail", MyRoutes.navRailRoute),
-            cardWidget(ctx, "Data Table", MyRoutes.dataTableRoute),
-            cardWidget(ctx, "Fetching Json Data with Http request",
+            cardWidget(context, "Carousel Slider", MyRoutes.carSliderRoute),
+            cardWidget(context, "Pass Data One page to Another Page",
+                MyRoutes.passDataRoute),
+            cardWidget(context, "Navigation Rail", MyRoutes.navRailRoute),
+            cardWidget(context, "Data Table", MyRoutes.dataTableRoute),
+            cardWidget(context, "Fetching Json Data with Http request",
                 MyRoutes.httpRequestRoute),
-            cardWidget(ctx, "Transform Widget", MyRoutes.transformWidgetRoute),
-            cardWidget(ctx, "Date & Time Picker", MyRoutes.dateTimePickerRoute),
-            cardWidget(ctx, "Backdrop Filter", MyRoutes.backdropFilterRoute),
-            cardWidget(ctx, "Expansion TIle", MyRoutes.expansionTileRoute),
-            cardWidget(ctx, "Animated Container", MyRoutes.animatedConRoute),
+            cardWidget(
+                context, "Transform Widget", MyRoutes.transformWidgetRoute),
+            cardWidget(
+                context, "Date & Time Picker", MyRoutes.dateTimePickerRoute),
+            cardWidget(
+                context, "Backdrop Filter", MyRoutes.backdropFilterRoute),
+            cardWidget(context, "Expansion TIle", MyRoutes.expansionTileRoute),
+            cardWidget(
+                context, "Animated Container", MyRoutes.animatedConRoute),
             Card(
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: ListTile(
@@ -46,25 +51,27 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
-            cardWidget(ctx, "Curved Navigatopn Bar", MyRoutes.curvedNBRoute),
-            cardWidget(ctx, "Switch Widget", MyRoutes.switch_widgetRoute),
-            cardWidget(ctx, "Animated Cross Feed", MyRoutes.animatedcfRoute),
-            cardWidget(ctx, "Checkbox", MyRoutes.checkboxRoute),
-            cardWidget(ctx, "Dismissable", MyRoutes.dissmissableRoute),
-            cardWidget(ctx, "Dropdown", MyRoutes.dropdownRoute),
-            cardWidget(ctx, "Rich Text", MyRoutes.richtextRoute),
-            cardWidget(ctx, "Slider", MyRoutes.sliderRoute),
+            cardWidget(
+                context, "Curved Navigatopn Bar", MyRoutes.curvedNBRoute),
+            cardWidget(context, "Switch Widget", MyRoutes.switch_widgetRoute),
+            cardWidget(
+                context, "Animated Cross Feed", MyRoutes.animatedcfRoute),
+            cardWidget(context, "Checkbox", MyRoutes.checkboxRoute),
+            cardWidget(context, "Dismissable", MyRoutes.dissmissableRoute),
+            cardWidget(context, "Dropdown", MyRoutes.dropdownRoute),
+            cardWidget(context, "Rich Text", MyRoutes.richtextRoute),
+            cardWidget(context, "Slider", MyRoutes.sliderRoute),
             Card(
               margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               child: ListTile(
                 onTap: () {
-                  ScaffoldMessenger.of(ctx).showSnackBar(SnackBar(
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                     content: const Text("Thanks for making snackbar"),
                     duration: const Duration(seconds: 5),
                     action: SnackBarAction(
                         label: "View more",
                         onPressed: () {
-                          Navigator.pushNamed(ctx, MyRoutes.snackbarRoute);
+                          Navigator.pushNamed(context, MyRoutes.snackbarRoute);
                         }),
                   ));
                 },
@@ -72,33 +79,36 @@ class HomePage extends StatelessWidget {
                 trailing: const Icon(Icons.check),
               ),
             ),
-            cardWidget(ctx, "Custom Alert Dialog", MyRoutes.customalrtdlgRoute),
-            cardWidget(ctx, "Alert Dialog", MyRoutes.alertdialogRoute),
-            cardWidget(ctx, "Modal Bottom Sheet", MyRoutes.modalbtmsheetRoute),
-            cardWidget(ctx, "Image Picker", MyRoutes.imagepickerRoute),
             cardWidget(
-                ctx, "Provider State management", MyRoutes.providerstateRoute),
-            cardWidget(ctx, "Appbar Gradient Color", MyRoutes.gradientappRoute),
-            cardWidget(ctx, "Sliver App Bar", MyRoutes.sliverappbarRoute),
-            cardWidget(ctx, "Tab Bar", MyRoutes.tabbarRoute),
+                context, "Custom Alert Dialog", MyRoutes.customalrtdlgRoute),
+            cardWidget(context, "Alert Dialog", MyRoutes.alertdialogRoute),
             cardWidget(
-                ctx, "Bottom Navigation Bar", MyRoutes.bottomnavbarRoute),
-            cardWidget(ctx, "Hero Widget", MyRoutes.heroWidgetRoute),
-            cardWidget(ctx, "Page View", MyRoutes.pageViewRoute),
-            cardWidget(ctx, "Expanded Widget", MyRoutes.expandedRoute),
-            cardWidget(ctx, "Card & GridView", MyRoutes.cardGridViewRoute),
-            cardWidget(ctx, "Liquid Swipe", MyRoutes.liquidSeipeRoute),
-            cardWidget(ctx, "Stack Position FlotingAction Button",
+                context, "Modal Bottom Sheet", MyRoutes.modalbtmsheetRoute),
+            cardWidget(context, "Image Picker", MyRoutes.imagepickerRoute),
+            cardWidget(context, "Provider State management",
+                MyRoutes.providerstateRoute),
+            cardWidget(
+                context, "Appbar Gradient Color", MyRoutes.gradientappRoute),
+            cardWidget(context, "Sliver App Bar", MyRoutes.sliverappbarRoute),
+            cardWidget(context, "Tab Bar", MyRoutes.tabbarRoute),
+            cardWidget(
+                context, "Bottom Navigation Bar", MyRoutes.bottomnavbarRoute),
+            cardWidget(context, "Hero Widget", MyRoutes.heroWidgetRoute),
+            cardWidget(context, "Page View", MyRoutes.pageViewRoute),
+            cardWidget(context, "Expanded Widget", MyRoutes.expandedRoute),
+            cardWidget(context, "Card & GridView", MyRoutes.cardGridViewRoute),
+            cardWidget(context, "Liquid Swipe", MyRoutes.liquidSeipeRoute),
+            cardWidget(context, "Stack Position FlotingAction Button",
                 MyRoutes.stackPFRoute),
-            cardWidget(ctx, "Image assets / network", MyRoutes.imageRoute),
-            cardWidget(ctx, "List Tile", MyRoutes.listTileRoute),
-            cardWidget(ctx, "Media Query", MyRoutes.mediaQueryRoute),
-            cardWidget(ctx, "Row & Column", MyRoutes.rowColRoute),
-            cardWidget(ctx, "Container", MyRoutes.containerRoute),
-            cardWidget(ctx, "Safe Area", MyRoutes.safeAreaRoute),
-            cardWidget(ctx, "Appbar & text widget", MyRoutes.appBarRoute),
-            cardWidget(ctx, "Statefull Widget", MyRoutes.stateFulRoute),
-            cardWidget(ctx, "Stateless Widget", MyRoutes.stateLessRoute),
+            cardWidget(context, "Image assets / network", MyRoutes.imageRoute),
+            cardWidget(context, "List Tile", MyRoutes.listTileRoute),
+            cardWidget(context, "Media Query", MyRoutes.mediaQueryRoute),
+            cardWidget(context, "Row & Column", MyRoutes.rowColRoute),
+            cardWidget(context, "Container", MyRoutes.containerRoute),
+            cardWidget(context, "Safe Area", MyRoutes.safeAreaRoute),
+            cardWidget(context, "Appbar & text widget", MyRoutes.appBarRoute),
+            cardWidget(context, "Statefull Widget", MyRoutes.stateFulRoute),
+            cardWidget(context, "Stateless Widget", MyRoutes.stateLessRoute),
           ]),
         ),
         drawer: MyDrawer(),
