@@ -21,8 +21,8 @@ class NavRail extends StatefulWidget {
 class _NavRailState extends State<NavRail> {
   int _selectedIndex = 0;
   final _pages = [
-    TransformWidgetPage(),
-    HttpRequestPage(),
+    const TransformWidgetPage(),
+    const HttpRequestPage(),
   ];
   @override
   Widget build(BuildContext context) {

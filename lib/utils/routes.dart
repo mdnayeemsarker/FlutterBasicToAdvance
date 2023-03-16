@@ -43,4 +43,5 @@ class MyRoutes {
   static String httpRequestRoute = "/httpRequest";
   static String dataTableRoute = "/dataTable";
   static String navRailRoute = "/navRail";
+  static String passDataRoute = "/passData";
 }
