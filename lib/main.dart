@@ -4,6 +4,7 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/animated_container.dart';
 import 'package:flutter_basic_advance/pages/backdrop_filter.dart';
+import 'package:flutter_basic_advance/pages/carousel_slider.dart';
 import 'package:flutter_basic_advance/pages/curved_navbar.dart';
 import 'package:flutter_basic_advance/pages/datatable.dart';
 import 'package:flutter_basic_advance/pages/date_time_picker.dart';
@@ -57,7 +58,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({super.key});
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -119,6 +120,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.navRailRoute: (context) => const NavRailPage(),
           MyRoutes.passDataRoute: (context) => const PassDataOnePage(),
           MyRoutes.splashScreenRoute: (context) => const SplashScreenPage(),
+          MyRoutes.carSliderRoute: (context) => const CarouselSliderPage(),
         });
   }
 }

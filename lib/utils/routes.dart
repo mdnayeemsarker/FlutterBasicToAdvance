@@ -45,4 +45,5 @@ class MyRoutes {
   static String navRailRoute = "/navRail";
   static String passDataRoute = "/passData";
   static String splashScreenRoute = "/splashScreen";
+  static String carSliderRoute = "/carSlider";
 }

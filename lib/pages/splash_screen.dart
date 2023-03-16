@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/home_page.dart';
 
 class SplashScreenPage extends StatelessWidget {
