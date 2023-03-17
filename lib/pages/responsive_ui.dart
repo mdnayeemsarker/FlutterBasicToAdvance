@@ -26,16 +26,45 @@ class _ResponsiveUiState extends State<ResponsiveUi> {
         appBar: AppBar(
           title: const Text("Responsive Ui"),
         ),
-        body: Center(
-          child: AspectRatio(
+        body: Column(children: [
+          AspectRatio(
             aspectRatio: 2,
             child: Container(
               height: 200,
-              width: 200,
+              width: MediaQuery.of(context).size.width / 3,
+              color: Colors.purple,
+            ),
+          ),
+          FittedBox(
+            child: Row(
+              children: [
+                Container(
+                  height: 200,
+                  width: MediaQuery.of(context).size.width / 2,
+                  color: Colors.amber,
+                ),
+                Container(
+                  height: 200,
+                  width: MediaQuery.of(context).size.width / 3,
+                  color: Colors.red,
+                ),
+                Container(
+                  height: 200,
+                  width: MediaQuery.of(context).size.width / 3,
+                  color: Colors.green,
+                ),
+              ],
+            ),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Container(
+              height: 200,
+              width: MediaQuery.of(context).size.width / 2,
               color: Colors.amber,
             ),
           ),
-        ),
+        ]),
       ),
     );
   }
