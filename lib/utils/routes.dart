@@ -53,4 +53,5 @@ class MyRoutes {
   static String urlLauncherRoute = "/urlLauncher";
   static String webviewRoute = "/webview";
   static String responsiveUiRoute = "/responsiveUi";
+  static String navigationsRoute = "/navigations";
 }
