@@ -24,26 +24,21 @@ class _ResponsiveUiState extends State<ResponsiveUi> {
         appBar: AppBar(
           title: const Text("Responsive Ui"),
         ),
-        body: LayoutBuilder(
-          builder: (_, constraints) {
-            if (constraints.maxWidth < 480) {
+        body: OrientationBuilder(
+          builder: (_, orientation) {
+            if (orientation == Orientation.portrait) {
               return Container(
                 child: const Center(
-                  child: Text("less than 480"),
+                  child: Text("Portrait"),
                 ),
-              );
-            } else if (constraints.maxWidth > 480 &&
-                constraints.maxWidth < 800) {
-              return Container(
-                child: const Center(
-                  child: Text("gretter than 480 less than 800"),
-                ),
+                color: Colors.green,
               );
             } else {
               return Container(
                 child: const Center(
-                  child: Text("gretter than 800"),
+                  child: Text("Landscript"),
                 ),
+                color: Colors.purple,
               );
             }
           },
