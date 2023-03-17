@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [
+            cardWidget(context, "Custom Drawer", MyRoutes.customDrawerRoute),
             cardWidget(context, "Text From field validate", MyRoutes.textFormRoute),
             cardWidget(context, "Shared Prefrences", MyRoutes.sharedPreRoute),
             cardWidget(context, "Carousel Slider", MyRoutes.carSliderRoute),

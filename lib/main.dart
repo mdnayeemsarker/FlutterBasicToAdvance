@@ -8,6 +8,7 @@ import 'package:flutter_basic_advance/pages/carousel_slider.dart';
 import 'package:flutter_basic_advance/pages/curved_navbar.dart';
 import 'package:flutter_basic_advance/pages/datatable.dart';
 import 'package:flutter_basic_advance/pages/date_time_picker.dart';
+import 'package:flutter_basic_advance/pages/drawer_page.dart';
 import 'package:flutter_basic_advance/pages/expansion_tile.dart';
 import 'package:flutter_basic_advance/pages/http_reqest.dart';
 import 'package:flutter_basic_advance/pages/navigation_rail.dart';
@@ -55,8 +56,8 @@ import 'package:flutter_basic_advance/pages/tab_bar.dart';
 import 'package:flutter_basic_advance/utils/routes.dart';
 
 void main() {
-  runApp(
-      ChangeNotifierProvider(create: (context) => StateData(), child: const MyApp()));
+  runApp(ChangeNotifierProvider(
+      create: (context) => StateData(), child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -125,6 +126,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.carSliderRoute: (context) => const CarouselSliderPage(),
           MyRoutes.sharedPreRoute: (context) => const SharedPrePage(),
           MyRoutes.textFormRoute: (context) => const TextFromFieldPage(),
+          MyRoutes.customDrawerRoute: (context) => const DrawerPage(),
         });
   }
 }

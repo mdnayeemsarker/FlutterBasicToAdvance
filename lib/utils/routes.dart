@@ -49,4 +49,5 @@ class MyRoutes {
   static String onBoardingRoute = "/onBoarding";
   static String sharedPreRoute = "/sharedPre";
   static String textFormRoute = "/textForm";
+  static String customDrawerRoute = "/customDrawer";
 }
