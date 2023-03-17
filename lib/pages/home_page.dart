@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [
+            cardWidget(context, "Url Launcher", MyRoutes.urlLauncherRoute),
             cardWidget(context, "Custom Drawer", MyRoutes.customDrawerRoute),
             cardWidget(context, "Text From field validate", MyRoutes.textFormRoute),
             cardWidget(context, "Shared Prefrences", MyRoutes.sharedPreRoute),
@@ -137,7 +138,7 @@ class HomePage extends StatelessWidget {
 }
 
 class MyDrawer extends StatelessWidget {
-  MyDrawer({super.key});
+  const MyDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {

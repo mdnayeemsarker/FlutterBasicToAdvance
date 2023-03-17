@@ -50,4 +50,5 @@ class MyRoutes {
   static String sharedPreRoute = "/sharedPre";
   static String textFormRoute = "/textForm";
   static String customDrawerRoute = "/customDrawer";
+  static String urlLauncherRoute = "/urlLauncher";
 }

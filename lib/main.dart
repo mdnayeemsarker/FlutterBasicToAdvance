@@ -17,6 +17,7 @@ import 'package:flutter_basic_advance/pages/shared_preferences.dart';
 import 'package:flutter_basic_advance/pages/splash_screen.dart';
 import 'package:flutter_basic_advance/pages/text_form_validte.dart';
 import 'package:flutter_basic_advance/pages/transform_widget.dart';
+import 'package:flutter_basic_advance/pages/url_launcher.dart';
 import 'package:provider/provider.dart';
 
 import 'package:flutter_basic_advance/pages/alert_dialog.dart';
@@ -127,6 +128,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.sharedPreRoute: (context) => const SharedPrePage(),
           MyRoutes.textFormRoute: (context) => const TextFromFieldPage(),
           MyRoutes.customDrawerRoute: (context) => const DrawerPage(),
+          MyRoutes.urlLauncherRoute: (context) => const UrlLaunchPage(),
         });
   }
 }
