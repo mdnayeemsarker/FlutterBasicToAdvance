@@ -51,4 +51,5 @@ class MyRoutes {
   static String textFormRoute = "/textForm";
   static String customDrawerRoute = "/customDrawer";
   static String urlLauncherRoute = "/urlLauncher";
+  static String webviewRoute = "/webview";
 }
