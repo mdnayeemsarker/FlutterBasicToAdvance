@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NavigationRoutePage extends StatelessWidget {
@@ -9,11 +10,6 @@ class NavigationRoutePage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Navigation Routes",
       theme: ThemeData(primaryColor: Colors.blue),
-      initialRoute: "/",
-      routes: {
-        "/first": (context) => const FirstScreen(),
-        "/second": (context) => const SecondScreen(),
-      },
       home: const FirstScreen(),
     );
   }
@@ -34,7 +30,11 @@ class _FirstScreenState extends State<FirstScreen> {
         body: Center(
           child: OutlinedButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/second");
+                Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => const SecondScreen(),
+                    ));
               },
               child: const Text("First Screen")),
         ),
@@ -53,7 +53,11 @@ class SecondScreen extends StatelessWidget {
         body: Center(
           child: OutlinedButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/first");
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const FirstScreen(),
+                    ));
               },
               child: const Text("Second Screen")),
         ),
