@@ -27,41 +27,23 @@ class _ResponsiveUiState extends State<ResponsiveUi> {
           title: const Text("Responsive Ui"),
         ),
         body: Column(children: [
-          AspectRatio(
-            aspectRatio: 2,
-            child: Container(
-              height: 200,
-              width: MediaQuery.of(context).size.width / 3,
-              color: Colors.purple,
-            ),
-          ),
-          FittedBox(
-            child: Row(
-              children: [
-                Container(
-                  height: 200,
-                  width: MediaQuery.of(context).size.width / 2,
-                  color: Colors.amber,
+          Container(
+            height: 200,
+            width: MediaQuery.of(context).size.width / 2,
+            color: Colors.purple,
+            child: FractionallySizedBox(
+              heightFactor: .5,
+              widthFactor: .5,
+              child: Container(
+                color: Colors.amber,
+                child: FractionallySizedBox(
+                  heightFactor: .5,
+                  widthFactor: .5,
+                  child: Container(
+                    color: Colors.green,
+                  ),
                 ),
-                Container(
-                  height: 200,
-                  width: MediaQuery.of(context).size.width / 3,
-                  color: Colors.red,
-                ),
-                Container(
-                  height: 200,
-                  width: MediaQuery.of(context).size.width / 3,
-                  color: Colors.green,
-                ),
-              ],
-            ),
-          ),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Container(
-              height: 200,
-              width: MediaQuery.of(context).size.width / 2,
-              color: Colors.amber,
+              ),
             ),
           ),
         ]),
