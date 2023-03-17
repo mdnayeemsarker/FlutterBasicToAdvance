@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class ResponsiveUiPage extends StatelessWidget {
   const ResponsiveUiPage({super.key});
@@ -26,27 +24,30 @@ class _ResponsiveUiState extends State<ResponsiveUi> {
         appBar: AppBar(
           title: const Text("Responsive Ui"),
         ),
-        body: Column(children: [
-          Container(
-            height: 200,
-            width: MediaQuery.of(context).size.width / 2,
-            color: Colors.purple,
-            child: FractionallySizedBox(
-              heightFactor: .5,
-              widthFactor: .5,
-              child: Container(
-                color: Colors.amber,
-                child: FractionallySizedBox(
-                  heightFactor: .5,
-                  widthFactor: .5,
-                  child: Container(
-                    color: Colors.green,
-                  ),
+        body: LayoutBuilder(
+          builder: (_, constraints) {
+            if (constraints.maxWidth < 480) {
+              return Container(
+                child: const Center(
+                  child: Text("less than 480"),
                 ),
-              ),
-            ),
-          ),
-        ]),
+              );
+            } else if (constraints.maxWidth > 480 &&
+                constraints.maxWidth < 800) {
+              return Container(
+                child: const Center(
+                  child: Text("gretter than 480 less than 800"),
+                ),
+              );
+            } else {
+              return Container(
+                child: const Center(
+                  child: Text("gretter than 800"),
+                ),
+              );
+            }
+          },
+        ),
       ),
     );
   }
