@@ -14,6 +14,7 @@ import 'package:flutter_basic_advance/pages/navigation_rail.dart';
 import 'package:flutter_basic_advance/pages/pass_data_one.dart';
 import 'package:flutter_basic_advance/pages/shared_preferences.dart';
 import 'package:flutter_basic_advance/pages/splash_screen.dart';
+import 'package:flutter_basic_advance/pages/text_form_validte.dart';
 import 'package:flutter_basic_advance/pages/transform_widget.dart';
 import 'package:provider/provider.dart';
 
@@ -123,6 +124,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.splashScreenRoute: (context) => const SplashScreenPage(),
           MyRoutes.carSliderRoute: (context) => const CarouselSliderPage(),
           MyRoutes.sharedPreRoute: (context) => const SharedPrePage(),
+          MyRoutes.textFormRoute: (context) => const TextFromFieldPage(),
         });
   }
 }
