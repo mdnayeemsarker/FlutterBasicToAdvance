@@ -18,6 +18,7 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20),
           child: ListView(children: [
+            cardWidget(context, "Responsive Ui", MyRoutes.responsiveUiRoute),
             cardWidget(context, "Web View", MyRoutes.webviewRoute),
             cardWidget(context, "Url Launcher", MyRoutes.urlLauncherRoute),
             cardWidget(context, "Custom Drawer", MyRoutes.customDrawerRoute),

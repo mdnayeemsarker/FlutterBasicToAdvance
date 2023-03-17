@@ -13,6 +13,7 @@ import 'package:flutter_basic_advance/pages/expansion_tile.dart';
 import 'package:flutter_basic_advance/pages/http_reqest.dart';
 import 'package:flutter_basic_advance/pages/navigation_rail.dart';
 import 'package:flutter_basic_advance/pages/pass_data_one.dart';
+import 'package:flutter_basic_advance/pages/responsive_ui.dart';
 import 'package:flutter_basic_advance/pages/shared_preferences.dart';
 import 'package:flutter_basic_advance/pages/splash_screen.dart';
 import 'package:flutter_basic_advance/pages/text_form_validte.dart';
@@ -131,6 +132,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.customDrawerRoute: (context) => const DrawerPage(),
           MyRoutes.urlLauncherRoute: (context) => const UrlLaunchPage(),
           MyRoutes.webviewRoute: (context) => const WebViewPage(),
+          MyRoutes.responsiveUiRoute: (context) => const ResponsiveUiPage(),
         });
   }
 }

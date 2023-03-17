@@ -52,4 +52,5 @@ class MyRoutes {
   static String customDrawerRoute = "/customDrawer";
   static String urlLauncherRoute = "/urlLauncher";
   static String webviewRoute = "/webview";
+  static String responsiveUiRoute = "/responsiveUi";
 }
