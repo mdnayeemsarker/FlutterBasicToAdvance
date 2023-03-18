@@ -55,4 +55,5 @@ class MyRoutes {
   static String responsiveUiRoute = "/responsiveUi";
   static String navigationsRoute = "/navigations";
   static String connectivityRoute = "/connectivity";
+  static String figmatoflutterRoute = "/figmatoflutter";
 }

@@ -11,6 +11,7 @@ import 'package:flutter_basic_advance/pages/datatable.dart';
 import 'package:flutter_basic_advance/pages/date_time_picker.dart';
 import 'package:flutter_basic_advance/pages/drawer_page.dart';
 import 'package:flutter_basic_advance/pages/expansion_tile.dart';
+import 'package:flutter_basic_advance/pages/figmatoflutter.dart';
 import 'package:flutter_basic_advance/pages/http_reqest.dart';
 import 'package:flutter_basic_advance/pages/navigation_rail.dart';
 import 'package:flutter_basic_advance/pages/navigation_route.dart';
@@ -137,6 +138,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.responsiveUiRoute: (context) => const ResponsiveUiPage(),
           MyRoutes.navigationsRoute: (context) => const NavigationRoutePage(),
           MyRoutes.connectivityRoute: (context) => const ConnectivityPage(),
+          MyRoutes.figmatoflutterRoute: (context) => SignuppageWidget(),
         });
   }
 }
