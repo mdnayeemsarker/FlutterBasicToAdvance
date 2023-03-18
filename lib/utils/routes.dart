@@ -54,4 +54,5 @@ class MyRoutes {
   static String webviewRoute = "/webview";
   static String responsiveUiRoute = "/responsiveUi";
   static String navigationsRoute = "/navigations";
+  static String connectivityRoute = "/connectivity";
 }

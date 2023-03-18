@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_basic_advance/pages/animated_container.dart';
 import 'package:flutter_basic_advance/pages/backdrop_filter.dart';
 import 'package:flutter_basic_advance/pages/carousel_slider.dart';
+import 'package:flutter_basic_advance/pages/connectivity.dart';
 import 'package:flutter_basic_advance/pages/curved_navbar.dart';
 import 'package:flutter_basic_advance/pages/datatable.dart';
 import 'package:flutter_basic_advance/pages/date_time_picker.dart';
@@ -135,6 +136,7 @@ class MyApp extends StatelessWidget {
           MyRoutes.webviewRoute: (context) => const WebViewPage(),
           MyRoutes.responsiveUiRoute: (context) => const ResponsiveUiPage(),
           MyRoutes.navigationsRoute: (context) => const NavigationRoutePage(),
+          MyRoutes.connectivityRoute: (context) => const ConnectivityPage(),
         });
   }
 }
