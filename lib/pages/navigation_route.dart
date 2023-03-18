@@ -30,7 +30,7 @@ class _FirstScreenState extends State<FirstScreen> {
         body: Center(
           child: OutlinedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                     context,
                     CupertinoPageRoute(
                       builder: (context) => const SecondScreen(),
@@ -53,9 +53,9 @@ class SecondScreen extends StatelessWidget {
         body: Center(
           child: OutlinedButton(
               onPressed: () {
-                Navigator.push(
+                Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(
+                    CupertinoPageRoute(
                       builder: (context) => const FirstScreen(),
                     ));
               },
